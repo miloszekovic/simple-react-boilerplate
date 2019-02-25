@@ -1,0 +1,10 @@
+/* navigation */
+nav {
+    
+    a {
+
+        &.active {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+/* global */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $dark;
+    color: $light;
+    @include font-size(1.8, 3.4);
+
+    @media screen and (max-width: 990px) {
+        @include font-size(1.5, 2.8);
+    }
+}
+
+body, 
+body *,
+input, 
+textarea,
+select {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a { 
+    color: $green;
+    text-decoration: none;
+    
+    &:hover {
+        color: $light;
+        @extend .hov;
+    }
+    
+    &:active {
+        @extend .act;
+    }
+
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: 700;
+    @include font-size(7.5, 8);
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 990px) {
+        @include font-size(6.5, 7);
+    }
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+/* layout */
+section {
+
+}
+
+.container {
+    margin: $center;
+    width: 70%;
+}
