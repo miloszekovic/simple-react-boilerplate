@@ -7,6 +7,10 @@ App is built on top of create-react-app project with some additions:
     - router
     - scss support
     - font awesome
+    
+### `Project setup`
+
+npm install
 
 ### `router`
 
